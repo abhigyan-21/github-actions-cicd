@@ -1,11 +1,11 @@
-name: Deployment
+name: Deploy
 
 on:
-  push:
+  workflow_call:
 
 jobs:
-  code-checkout:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Print the message
-        run: echo "code deployed"
+      - name: Deploy
+        run: echo "Deploying..."
