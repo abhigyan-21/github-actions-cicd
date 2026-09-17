@@ -1,14 +1,14 @@
 name: Code
 
 on:
-  push:
+  workflow_call:
 
 jobs:
   code-checkout:
     runs-on: ubuntu-latest
     steps:
       - name: Clone the code
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
 
       - name: Print the message
         run: echo "code cloned"
