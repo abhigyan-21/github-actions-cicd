@@ -1,0 +1,11 @@
+name: Deployment
+
+on:
+  push:
+
+jobs:
+  code-checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the message
+        run: echo "code deployed"
