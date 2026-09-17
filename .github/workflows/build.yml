@@ -1,0 +1,12 @@
+name: Build
+
+on: 
+  push: 
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu_latest
+    steps:
+      - name: Build the code
+        run: echo "code built"
