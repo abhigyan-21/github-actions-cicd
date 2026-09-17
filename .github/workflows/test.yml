@@ -1,0 +1,11 @@
+name: Test
+
+on:
+  push:
+
+jobs:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Print the message
+        run: echo "code tested"
